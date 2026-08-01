@@ -198,4 +198,6 @@ flutter test
 
 ## License
 
-MIT
+Apache License 2.0 — see [LICENSE](LICENSE).
+
+Contributions are accepted under the same license, per section 5.
