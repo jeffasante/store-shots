@@ -1,0 +1,28 @@
+name: store_shots
+description: >-
+  Capture App Store and Play Store screenshots from a real Flutter app with
+  integration_test, including macOS, and verify they match store dimensions.
+version: 0.1.0
+repository: https://github.com/jeffasante/store-shots
+issue_tracker: https://github.com/jeffasante/store-shots/issues
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+  flutter: ">=3.24.0"
+
+dependencies:
+  args: ^2.6.0
+  crypto: ^3.0.6
+  flutter:
+    sdk: flutter
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  yaml: ^3.1.2
+
+dev_dependencies:
+  flutter_lints: ^5.0.0
+
+executables:
+  store_shots:

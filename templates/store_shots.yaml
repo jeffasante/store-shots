@@ -1,0 +1,25 @@
+# Copy to your project root as store_shots.yaml, then run:
+#   dart run store_shots capture
+
+# Where screenshots are written: <output>/<target id>/<name>.png
+output: screenshots
+
+driver: test_driver/store_shots_test.dart
+target: integration_test/store_shots_test.dart
+
+targets:
+  # Find simulator UDIDs with: xcrun simctl list devices available
+  - id: ios-6.9
+    device: 00000000-0000-0000-0000-000000000000 # iPhone 16 Pro Max
+
+  - id: ipad-13
+    device: 00000000-0000-0000-0000-000000000000 # iPad Pro 13-inch (M4)
+
+  # window_size pins the macOS window so captures are native pixels rather
+  # than resized afterwards. Must be a size the store accepts.
+  - id: macos
+    device: macos
+    window_size: 2880x1800
+
+  # - id: android-phone
+  #   device: emulator-5554
