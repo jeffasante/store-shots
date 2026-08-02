@@ -2,7 +2,7 @@ name: store_shots
 description: >-
   Capture App Store and Play Store screenshots from a real Flutter app with
   integration_test, including macOS, and verify they match store dimensions.
-version: 0.1.0
+version: 0.1.1
 repository: https://github.com/jeffasante/store-shots
 issue_tracker: https://github.com/jeffasante/store-shots/issues
 

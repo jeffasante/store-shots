@@ -49,6 +49,7 @@ class StoreShots {
     );
   }
 
+  /// The integration-test binding used to capture and publish screenshots.
   final IntegrationTestWidgetsFlutterBinding binding;
 
   final Map<String, String> _rasterised = <String, String>{};

@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.1
+
+- Document all public API elements.
+- Add an example that lists store slots and accepted screenshot sizes.
+
 ## 0.1.0
 
 Initial release.

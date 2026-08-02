@@ -1,5 +1,6 @@
 /// A store listing slot and the pixel dimensions it accepts.
 class StoreSpec {
+  /// Creates a store listing specification with its accepted [sizes].
   const StoreSpec({
     required this.id,
     required this.store,
@@ -25,11 +26,14 @@ class StoreSpec {
   /// Whether a submission is rejected without this slot.
   final bool required;
 
+  /// Additional guidance about devices or submission requirements.
   final String? note;
 
+  /// Whether [width] and [height] exactly match an accepted size.
   bool accepts(int width, int height) =>
       sizes.any((s) => s.width == width && s.height == height);
 
+  /// The accepted dimensions formatted for display.
   String get sizeSummary =>
       sizes.map((s) => '${s.width}x${s.height}').join(' or ');
 }

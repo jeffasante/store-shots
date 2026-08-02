@@ -48,7 +48,7 @@ from the real running app, then checks the results:
 dev_dependencies:
   integration_test:
     sdk: flutter
-  store_shots: ^0.1.0
+  store_shots: ^0.1.1
 ```
 
 ## Setup
